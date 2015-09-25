@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+  <head></head>
+  <title>RailsWickedPdf
+    <%= wicked_pdf_stylesheet_link_tag    "application", :media => "all" %>
+    <%= wicked_pdf_javascript_include_tag "application" %>
+    <%#= wicked_pdf_image_tag %>
+    <%= csrf_meta_tags %>
+  </title>
+  <body>
+    <%= yield %>
+  </body>
+</html>
